@@ -1,3 +1,4 @@
+// https://jsfiddle.net/vk35ok2o/16/
 console.log('typeof 1/0 => ', typeof 1/0);
 console.log('typeof (1/0) => ', typeof (1/0));
 console.log('1/0 => ', 1/0);
