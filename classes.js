@@ -2,11 +2,11 @@
 function A() {}
 // Static
 A.getSmth = function() {
-	return 1;
+  return 1;
 }
 // Public
 A.prototype.getAnother = function() {
-	return 2;
+  return 2;
 }
 
 console.log('A.getSmth() => ', A.getSmth());
@@ -15,19 +15,18 @@ console.log('A.prototype.getAnother() => ', A.prototype.getAnother());
 var a = new A();
 console.log('a.getAnother() => ', a.getAnother());
 try {
-	console.log(a.getSmth());
+  console.log(a.getSmth());
 } catch(e) {
-	console.log('a.getSmth() TypeError => ', e.constructor.name);
+  console.log('a.getSmth() TypeError => ', e.constructor.name);
 }
 ///////////////////////////////////////////
 var b = function someFunction() {
-	console.log('var b = function someFunction() { => ', someFunction);
+  console.log('var b = function someFunction() { => ', someFunction);
 }
 b();
 try {
-	console.log(someFunction);
+  console.log(someFunction);
 } catch(e) {
-	console.log('someFunction => ', e.constructor.name);
+  console.log('someFunction => ', e.constructor.name);
 }
 ///////////////////////////////////////////
-
