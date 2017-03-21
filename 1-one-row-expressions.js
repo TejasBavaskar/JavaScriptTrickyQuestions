@@ -1,4 +1,4 @@
-// https://jsfiddle.net/vk35ok2o/20/
+// https://jsfiddle.net/vk35ok2o/29/
 console.log('typeof 1/0 => ', typeof 1/0);
 console.log('typeof (1/0) => ', typeof (1/0));
 console.log('1/0 => ', 1/0);
@@ -39,3 +39,10 @@ var c = 2
 console.log('var c = 2\n+3; => ', c);
 console.log('true >= 1 => ', true >= 1);
 console.log('"a" > "Z" => ', "a" > "Z");
+
+var n = NaN;
+console.log('n == n => ', n == n);
+console.log('NaN == NaN => ', NaN == NaN);
+console.log('true + false => ', true + false);
+console.log('4 + 5 + "px" => ', 4 + 5 + "px");
+console.log('6 << 1 => ', 6 << 1);
