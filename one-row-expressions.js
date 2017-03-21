@@ -1,4 +1,4 @@
-// https://jsfiddle.net/vk35ok2o/16/
+// https://jsfiddle.net/vk35ok2o/20/
 console.log('typeof 1/0 => ', typeof 1/0);
 console.log('typeof (1/0) => ', typeof (1/0));
 console.log('1/0 => ', 1/0);
@@ -33,3 +33,9 @@ console.log('null >= 0 => ', null >= 0);
 console.log('undefined == 0 => ', undefined == 0);
 console.log('!!" " => ', !!" ");
 console.log('0 == "\\n0\\n" => ', 0 == "\n0\n");
+
+var c = 2
++3;
+console.log('var c = 2\n+3; => ', c);
+console.log('true >= 1 => ', true >= 1);
+console.log('"a" > "Z" => ', "a" > "Z");
