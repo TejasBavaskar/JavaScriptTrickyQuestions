@@ -1,4 +1,4 @@
-// https://jsfiddle.net/vk35ok2o/49/
+// https://jsfiddle.net/vk35ok2o/50/
 console.log('typeof 1/0 => ', typeof 1/0);
 console.log('typeof (1/0) => ', typeof (1/0));
 console.log('1/0 => ', 1/0);
@@ -70,3 +70,9 @@ console.log('"".charAt(0) => ', "".charAt(0));
 console.log('""[0] => ', ""[0]);
 console.log('"a" > "Z" => ', "a" > "Z");
 console.log('"Kitty" > "Dinosaur" => ', "Kitty" > "Dinosaur");
+
+var obj = {};
+console.log('obj.a === obj.b => ', obj.a === obj.b);
+obj.a = undefined;
+console.log('"a" in obj => ', "a" in obj);
+console.log('"b" in obj => ', "b" in obj);
