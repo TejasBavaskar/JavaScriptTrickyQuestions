@@ -1,4 +1,4 @@
-// https://jsfiddle.net/n00x7fhk/7/
+// https://jsfiddle.net/n00x7fhk/8/
 function A() {}
 // Static
 A.getSmth = function() {
@@ -39,7 +39,7 @@ var c = {
 for (var key in c) {
 	arr.push(c[key]);
 }
-console.log(arr);
+console.log('1. for (var key in c) { =>', arr);
 ///////////////////////////////////////////
 arr = [];
 c = {
@@ -50,4 +50,11 @@ c = {
 for (var key in c) {
 	arr.push(c[key]);
 }
-console.log(arr);
+console.log('2. for (var key in c) { => ', arr);
+///////////////////////////////////////////
+var john = {};
+var stewie = {};
+john.friend = stewie;
+stewie.friend = john;
+john = null;
+console.log('stewie.friend => ', stewie.friend);
